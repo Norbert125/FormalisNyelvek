@@ -11,6 +11,13 @@ commitok mellett jelennek meg: zöld pipa jelzi a sikeres tesztelést, piros X p
 
 A feladatok manuális átvizsgáláson is átesnek, hogy kiszűrjük az esetleges csalásokat vagy másolásokat.
 
+# Nulladik lépések
+
+1. Forkold le a repositoryt.
+2. Github weboldalon --> `Actions` tab --> `I understand my workflows, go ahead and enable them`
+
+Alapvetően amikor egy workflow-t tartalmazó repositoryt leforkolsz, az actionök ki vannak kapcsolva, újra kell őket aktiválni. Ezek segítségével fogjuk tudni megcsinálni az automatikus tesztelést.
+
 # Starter projektek
 
 Starter projektre azért van szükség, hogy egységes struktúrájú projektje legyen mindenkinek, ezzel lehetővé téve az azonnali automatikus tesztelést. Jelenleg két nyelv (template) közül lehet válaszani: C++ vagy Python.
