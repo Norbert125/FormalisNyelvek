@@ -11,8 +11,9 @@ class Main(object):
 
     def load_problems(self):
         package = 'project.problems'
+        problems_package = importlib.import_module(package)
 
-        for _, module_name, _ in pkgutil.iter_modules([package.replace('.', '/')]):
+        for _, module_name, _ in pkgutil.iter_modules(problems_package.__path__):
             module = importlib.import_module(f"{package}.{module_name}")
 
             for attribute_name in dir(module):
